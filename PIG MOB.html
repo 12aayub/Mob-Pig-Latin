@@ -39,13 +39,13 @@
             }
             if(specialChr.test(inputArray[i])){
               var position = inputArray[i].search(specialChr);
-              console.log(position)
+              alert(position)
               inputArray[i] = inputArray[i].substring(0, position) +inputArray[i].substring(position+1, inputArray[i].length) + inputArray[i].substring(position,position+1) 
             }
 
 
 }
-   console.log(inputArray.join(" "))
+   alert(inputArray.join(" "))
 }
   //call the function with wordArray passed as the parameter
       pigLatin(wordArray);
